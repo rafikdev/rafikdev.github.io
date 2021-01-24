@@ -292,19 +292,19 @@ nav.nav-rtl {direction: rtl;}
 /* Get Startet Button */
 .get-started-btn {
   margin-left: 25px;
-  color: #5cb874;
+  color: #ffffff;
   border-radius: 4px;
   padding: 7px 25px 8px 25px;
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
-  border: 2px solid #5cb874;
+  border: 2px solid #ffffff;
   display: inline-block;
   font-weight: 600;
 }
 
 .get-started-btn:hover {
-  background: #5cb874;
+  background: #ffffff;
   color: #fff;
 }
 
