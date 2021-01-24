@@ -291,10 +291,10 @@ nav.nav-rtl {direction: rtl;}
 
 /* Get Startet Button */
 .get-started-btn {
-  margin-left: 25px;
+  margin-left: 0px;
   color: #ffffff;
   border-radius: 4px;
-  padding: 7px 25px 8px 25px;
+  padding: 7px 0px 8px 0px;
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
