@@ -8,11 +8,28 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'DroidKufi';
+  src: url('../fonts/Droid.Arabic.Kufi.ttf');
+}
+@font-face {
+  font-family: 'DroidKufiBold';
+  src: url('../fonts/DroidKufi-Bold.ttf');
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+
 }
 
+.list-group-item {
+  line-height: 24px;
+  font-size: 15px;
+  color: #3b3b3b;
+  font-family: 'DroidKufi', Sans-Serif;
+  display: block;
+}
 a {
   color: #5cb874;
 }
@@ -25,6 +42,9 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
+
+
+
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -65,9 +85,13 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
 }
 
+
+
+
 #topbar.topbar-scrolled {
   top: -40px;
 }
+
 
 #topbar .contact-info a {
   line-height: 1;
@@ -152,7 +176,10 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
+
+nav.nav-rtl {direction: rtl;}
 .nav-menu ul {
+ 
   margin: 0;
   padding: 0;
   list-style: none;
@@ -174,7 +201,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #222222;
   transition: 0.3s;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'DroidKufiBold', Sans-Serif;
+  font-weight: 600;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -208,10 +238,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu .drop-down ul a {
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   text-transform: none;
   color: #222222;
+  
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
@@ -390,6 +421,16 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
+/*--------------------------------------------------------------
+# space Section
+--------------------------------------------------------------*/
+#hero {
+  width: 50%;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+}
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -415,7 +456,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-item::before {
   content: '';
-  background-color: rgba(45, 103, 60, 0.8);
 }
 
 #hero .carousel-container {
@@ -431,6 +471,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .container {
   text-align: center;
+  
 }
 
 #hero h2 {
@@ -585,10 +626,10 @@ section {
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
-  text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  font-family: 'DroidKufiBold', Sans-Serif;
 }
 
 .section-title h2::before {
@@ -615,14 +656,50 @@ section {
 
 .section-title p {
   margin-bottom: 0;
-  font-size: 14px;
-  color: #919191;
+  line-height: 24px;
+  font-size: 15px;
+  color: #3b3b3b;
+  font-family: 'DroidKufi', Sans-Serif;
+  display: block;
+
+}
+.section-title-default  {
+  text-align: right;
+  padding-bottom: 30px;
+  margin-right: 90px;
+}
+
+
+.section-title-default h2 {
+  margin-top: 30px;
+  font-size: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  position: relative;
+  font-family: 'DroidKufiBold', Sans-Serif;
+}
+
+
+
+.section-title-default p {
+  margin-bottom: 0;
+  line-height: 24px;
+  font-size: 15px;
+  color: #3b3b3b;
+  font-family: 'DroidKufi', Sans-Serif;
+  display: block;
+margin-left: 50px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*--------------------------------------------------------------
 # Featured Services
 --------------------------------------------------------------*/
-.featured-services {
+.featured-services h2{
   padding: 20px 0;
 }
 
@@ -700,12 +777,16 @@ section {
 .why-us .row {
   overflow: hidden;
 }
-
+.list-inline {
+  display: flex;
+}
 .why-us .content-item {
   padding: 40px;
   border-left: 1px solid #eee;
   border-bottom: 1px solid #eee;
   margin: -1px;
+  
+  justify-content: center;
 }
 
 .why-us .content-item span {
@@ -1479,8 +1560,8 @@ section {
 }
 
 #footer p {
+  font-family: 'DroidKufi', Sans-Serif;
   font-size: 15;
-  font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
 }
